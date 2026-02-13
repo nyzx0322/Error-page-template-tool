@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>404 - Not Found</title>
+  <style>
+    /* Base Reset */
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    a { text-decoration: none; }
+    
+    /* Common Elements */
+    .icon { margin-bottom: 20px; display: inline-block; }
+    .icon svg { width: 64px; height: 64px; fill: currentColor; }
+    .btn {
+      padding: 12px 30px;
+      margin-top: 30px;
+      display: inline-block;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+    .btn:active { transform: scale(0.98); }
+    .desc { max-width: 500px; margin: 20px auto; line-height: 1.6; font-size: 1.1rem; opacity: 0.9; }
+    .hidden-data { display: none; }
+    
+    /* Specific Injected CSS */
+    
+            :root { --bg: #0b0d17; --text: #d0d6f9; --accent: #ffffff; }
+            body { font-family: system-ui; background: radial-gradient(circle at center, #1b2735 0%, #090a0f 100%); }
+            h1 { font-size: 12rem; background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 0; }
+            .container { animation: float 6s ease-in-out infinite; }
+            @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+            .btn { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); }
+        
+    
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 { font-size: 4rem !important; }
+      .container { padding: 20px !important; width: 90% !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z"/></svg></div>
+    
+    <!-- Special Split Structure for 506 -->
+    
+    
+    <h1>404</h1>
+    <h2>Not Found</h2>
+    <p class="desc">请求的资源不存在</p>
+    <a href="./index.html" class="btn">RETURN HOME</a>
+    
+    
+  </div>
+
+  <div class="hidden-data">
+    <div class="code-pill">HTTP 404</div>
+    <h1>Not Found</h1>
+    <p class="desc">请求的资源不存在</p>
+    <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z"/></svg></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>506 - Variant Also Negotiates</title>
+  <style>
+    /* Base Reset */
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    a { text-decoration: none; }
+    
+    /* Common Elements */
+    .icon { margin-bottom: 20px; display: inline-block; }
+    .icon svg { width: 64px; height: 64px; fill: currentColor; }
+    .btn {
+      padding: 12px 30px;
+      margin-top: 30px;
+      display: inline-block;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+    .btn:active { transform: scale(0.98); }
+    .desc { max-width: 500px; margin: 20px auto; line-height: 1.6; font-size: 1.1rem; opacity: 0.9; }
+    .hidden-data { display: none; }
+    
+    /* Specific Injected CSS */
+    
+            :root { --bg: #fff; --text: #000; --accent: #000; }
+            body { display: grid; grid-template-columns: 1fr 1fr; padding: 0; }
+            .left { background: #000; color: #fff; display: flex; align-items: center; justify-content: center; height: 100vh; }
+            .right { background: #fff; color: #000; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; padding: 40px; box-sizing: border-box; }
+            h1 { font-size: 8rem; margin: 0; }
+            h2 { font-size: 2rem; margin-bottom: 20px; }
+            .btn { border: 2px solid #000; color: #000; }
+            .btn:hover { background: #000; color: #fff; }
+            .container { width: 100%; display: contents; }
+            @media(max-width: 700px) { body { grid-template-columns: 1fr; } .left { height: 200px; } .right { height: auto; padding: 60px 20px; } .container { display: block; } }
+        
+    
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 { font-size: 4rem !important; }
+      .container { padding: 20px !important; width: 90% !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z"/></svg></div>
+    
+    <!-- Special Split Structure for 506 -->
+    <div class="left">
+    
+    <h1>506</h1>
+    <h2>Variant Also Negotiates</h2>
+    <p class="desc">服务器内部配置错误</p>
+    <a href="./index.html" class="btn">RETURN HOME</a>
+    
+    </div><div class="right"><h2>Identity Crisis</h2><p>Server returned a variant list.</p></div>
+  </div>
+
+  <div class="hidden-data">
+    <div class="code-pill">HTTP 506</div>
+    <h1>Variant Also Negotiates</h1>
+    <p class="desc">服务器内部配置错误</p>
+    <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z"/></svg></div>
+  </div>
+</body>
+</html>

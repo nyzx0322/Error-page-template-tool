@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>509 - Bandwidth Limit Exceeded</title>
+  <style>
+    /* Base Reset */
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    a { text-decoration: none; }
+    
+    /* Common Elements */
+    .icon { margin-bottom: 20px; display: inline-block; }
+    .icon svg { width: 64px; height: 64px; fill: currentColor; }
+    .btn {
+      padding: 12px 30px;
+      margin-top: 30px;
+      display: inline-block;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+    .btn:active { transform: scale(0.98); }
+    .desc { max-width: 500px; margin: 20px auto; line-height: 1.6; font-size: 1.1rem; opacity: 0.9; }
+    .hidden-data { display: none; }
+    
+    /* Specific Injected CSS */
+    
+            :root { --bg: #54a0ff; --text: #fff; --accent: #2e86de; }
+            body { font-family: 'Oswald', sans-serif; background: #54a0ff; color: #fff; }
+            h1 { font-size: 10rem; transform: scaleX(0.5); margin: 0; line-height: 0.8; }
+            h2 { font-weight: 300; text-transform: uppercase; letter-spacing: 5px; margin-top: 20px; }
+            .container { padding: 0 20px; border-left: 10px solid rgba(255,255,255,0.3); border-right: 10px solid rgba(255,255,255,0.3); height: 80vh; display: flex; flex-direction: column; justify-content: center; }
+            .btn { background: #fff; color: #54a0ff; font-weight: bold; }
+        
+    
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 { font-size: 4rem !important; }
+      .container { padding: 20px !important; width: 90% !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z"/></svg></div>
+    
+    <!-- Special Split Structure for 506 -->
+    
+    
+    <h1>509</h1>
+    <h2>Bandwidth Limit Exceeded</h2>
+    <p class="desc">带宽超出限制</p>
+    <a href="./index.html" class="btn">RETURN HOME</a>
+    
+    
+  </div>
+
+  <div class="hidden-data">
+    <div class="code-pill">HTTP 509</div>
+    <h1>Bandwidth Limit Exceeded</h1>
+    <p class="desc">带宽超出限制</p>
+    <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z"/></svg></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unique Error Pages Gallery</title>
+  <style>
+    :root { --bg: #f0f2f5; --text: #333; }
+    body {
+      margin: 0; min-height: 100vh; background: var(--bg); color: var(--text);
+      font-family: system-ui, sans-serif; padding: 40px;
+    }
+    .header { text-align: center; margin-bottom: 50px; }
+    h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    .subtitle { color: #666; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      padding: 30px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      min-height: 180px;
+      position: relative;
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      z-index: 10;
+    }
+    .code { font-size: 2.5rem; font-weight: bold; margin-bottom: 10px; line-height: 1; }
+    .title { font-weight: bold; font-size: 1rem; margin-bottom: 8px; text-transform: uppercase; }
+    .desc { font-size: 0.8rem; opacity: 0.8; }
+    
+    /* Generated Card Styles */
+    .card-400 { background: #fff; color: #000; border: 4px solid #000; font-family: 'Times New Roman'; }
+.card-401 { background: #000; color: #00ff00; border: 1px solid #00ff00; font-family: monospace; }
+.card-403 { background: #1a0000; color: #ff0000; border: 2px solid #ff0000; font-family: 'Impact'; }
+.card-404 { background: #0b0d17; color: #d0d6f9; background: radial-gradient(circle at center, #1b2735 0%, #090a0f 100%); }
+.card-405 { background: #f7d716; color: #000; font-family: 'Arial Black'; border: 2px solid #000; }
+.card-408 { background: #e6e2d3; color: #5c5546; font-family: 'Georgia'; }
+.card-413 { background: #636e72; color: #dfe6e9; border: 2px solid #2d3436; }
+.card-414 { background: #fff; color: #333; font-family: 'Courier New'; border-top: 2px dashed #333; border-bottom: 2px dashed #333; }
+.card-429 { background: #6c5ce7; color: #fff; background-image: radial-gradient(#a29bfe 2px, transparent 2px); background-size: 10px 10px; }
+.card-499 { background: #222; color: #fff; font-family: 'Consolas'; }
+.card-500 { background: #0000AA; color: #fff; font-family: 'Lucida Console'; text-align: left; }
+.card-501 { background: #34495e; color: #ecf0f1; border: 1px dashed #ecf0f1; }
+.card-502 { background: #fff; color: #212529; border-top: 4px solid #dc3545; }
+.card-503 { background: #2c2c54; color: #dcdde1; border-radius: 10px; }
+.card-504 { background: #f1f2f6; color: #57606f; -webkit-text-stroke: 1px #a4b0be; }
+.card-505 { background: #0f380f; color: #9bbc0f; border: 2px solid #9bbc0f; font-family: monospace; }
+.card-506 { background: linear-gradient(90deg, #000 50%, #fff 50%); color: #888; border: 1px solid #000; }
+.card-507 { background: #ff9f43; color: #fff; border-bottom: 10px solid #ee5253; }
+.card-509 { background: #54a0ff; color: #fff; font-family: 'Impact', sans-serif; letter-spacing: -2px; }
+.card-510 { background: #c8d6e5; color: #576574; border: 2px dashed #576574; }
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Unique Style Gallery (V5)</h1>
+    <p class="subtitle">20 Distinct Visual Identities</p>
+  </div>
+  <div class="grid">
+    
+        <a href="400.html" class="card card-400">
+            <div class="code">400</div>
+            <div class="title">Bad Request</div>
+            <div class="desc">请求参数或格式错误</div>
+        </a>
+        
+        <a href="401.html" class="card card-401">
+            <div class="code">401</div>
+            <div class="title">Unauthorized</div>
+            <div class="desc">访问需要身份验证</div>
+        </a>
+        
+        <a href="403.html" class="card card-403">
+            <div class="code">403</div>
+            <div class="title">Forbidden</div>
+            <div class="desc">服务器拒绝执行此请求</div>
+        </a>
+        
+        <a href="404.html" class="card card-404">
+            <div class="code">404</div>
+            <div class="title">Not Found</div>
+            <div class="desc">请求的资源不存在</div>
+        </a>
+        
+        <a href="405.html" class="card card-405">
+            <div class="code">405</div>
+            <div class="title">Method Not Allowed</div>
+            <div class="desc">请求方法不被允许</div>
+        </a>
+        
+        <a href="408.html" class="card card-408">
+            <div class="code">408</div>
+            <div class="title">Request Timeout</div>
+            <div class="desc">服务器等待请求超时</div>
+        </a>
+        
+        <a href="413.html" class="card card-413">
+            <div class="code">413</div>
+            <div class="title">Payload Too Large</div>
+            <div class="desc">请求实体过大</div>
+        </a>
+        
+        <a href="414.html" class="card card-414">
+            <div class="code">414</div>
+            <div class="title">URI Too Long</div>
+            <div class="desc">请求 URL 长度超限</div>
+        </a>
+        
+        <a href="429.html" class="card card-429">
+            <div class="code">429</div>
+            <div class="title">Too Many Requests</div>
+            <div class="desc">请求过于频繁，请稍后</div>
+        </a>
+        
+        <a href="499.html" class="card card-499">
+            <div class="code">499</div>
+            <div class="title">Client Closed Request</div>
+            <div class="desc">客户端主动关闭连接</div>
+        </a>
+        
+        <a href="500.html" class="card card-500">
+            <div class="code">500</div>
+            <div class="title">Internal Server Error</div>
+            <div class="desc">服务器内部错误</div>
+        </a>
+        
+        <a href="501.html" class="card card-501">
+            <div class="code">501</div>
+            <div class="title">Not Implemented</div>
+            <div class="desc">服务器不支持此功能</div>
+        </a>
+        
+        <a href="502.html" class="card card-502">
+            <div class="code">502</div>
+            <div class="title">Bad Gateway</div>
+            <div class="desc">网关错误，上游无效</div>
+        </a>
+        
+        <a href="503.html" class="card card-503">
+            <div class="code">503</div>
+            <div class="title">Service Unavailable</div>
+            <div class="desc">服务暂时不可用</div>
+        </a>
+        
+        <a href="504.html" class="card card-504">
+            <div class="code">504</div>
+            <div class="title">Gateway Timeout</div>
+            <div class="desc">网关请求超时</div>
+        </a>
+        
+        <a href="505.html" class="card card-505">
+            <div class="code">505</div>
+            <div class="title">HTTP Version Not Supported</div>
+            <div class="desc">HTTP 版本不支持</div>
+        </a>
+        
+        <a href="506.html" class="card card-506">
+            <div class="code">506</div>
+            <div class="title">Variant Also Negotiates</div>
+            <div class="desc">服务器内部配置错误</div>
+        </a>
+        
+        <a href="507.html" class="card card-507">
+            <div class="code">507</div>
+            <div class="title">Insufficient Storage</div>
+            <div class="desc">服务器存储空间不足</div>
+        </a>
+        
+        <a href="509.html" class="card card-509">
+            <div class="code">509</div>
+            <div class="title">Bandwidth Limit Exceeded</div>
+            <div class="desc">带宽超出限制</div>
+        </a>
+        
+        <a href="510.html" class="card card-510">
+            <div class="code">510</div>
+            <div class="title">Not Extended</div>
+            <div class="desc">获取资源需要更多策略</div>
+        </a>
+        
+  </div>
+</body>
+</html>

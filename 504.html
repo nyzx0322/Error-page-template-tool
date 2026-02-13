@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>504 - Gateway Timeout</title>
+  <style>
+    /* Base Reset */
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    a { text-decoration: none; }
+    
+    /* Common Elements */
+    .icon { margin-bottom: 20px; display: inline-block; }
+    .icon svg { width: 64px; height: 64px; fill: currentColor; }
+    .btn {
+      padding: 12px 30px;
+      margin-top: 30px;
+      display: inline-block;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+    .btn:active { transform: scale(0.98); }
+    .desc { max-width: 500px; margin: 20px auto; line-height: 1.6; font-size: 1.1rem; opacity: 0.9; }
+    .hidden-data { display: none; }
+    
+    /* Specific Injected CSS */
+    
+            :root { --bg: #f1f2f6; --text: #a4b0be; --accent: #57606f; }
+            body { font-family: 'Arial', sans-serif; background: #f1f2f6; }
+            h1 { font-size: 8rem; color: transparent; -webkit-text-stroke: 2px #a4b0be; opacity: 0.5; margin: 0; }
+            h2 { color: #57606f; font-weight: bold; }
+            .container { opacity: 0; animation: fadeIn 2s forwards; }
+            @keyframes fadeIn { to { opacity: 1; } }
+            .btn { color: #57606f; border-bottom: 2px solid #57606f; padding: 5px 0; border-radius: 0; }
+            .btn:hover { color: #2f3542; border-color: #2f3542; background: none; }
+        
+    
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 { font-size: 4rem !important; }
+      .container { padding: 20px !important; width: 90% !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z"/></svg></div>
+    
+    <!-- Special Split Structure for 506 -->
+    
+    
+    <h1>504</h1>
+    <h2>Gateway Timeout</h2>
+    <p class="desc">网关请求超时</p>
+    <a href="./index.html" class="btn">RETURN HOME</a>
+    
+    
+  </div>
+
+  <div class="hidden-data">
+    <div class="code-pill">HTTP 504</div>
+    <h1>Gateway Timeout</h1>
+    <p class="desc">网关请求超时</p>
+    <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z"/></svg></div>
+  </div>
+</body>
+</html>

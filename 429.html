@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>429 - Too Many Requests</title>
+  <style>
+    /* Base Reset */
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    a { text-decoration: none; }
+    
+    /* Common Elements */
+    .icon { margin-bottom: 20px; display: inline-block; }
+    .icon svg { width: 64px; height: 64px; fill: currentColor; }
+    .btn {
+      padding: 12px 30px;
+      margin-top: 30px;
+      display: inline-block;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+    .btn:active { transform: scale(0.98); }
+    .desc { max-width: 500px; margin: 20px auto; line-height: 1.6; font-size: 1.1rem; opacity: 0.9; }
+    .hidden-data { display: none; }
+    
+    /* Specific Injected CSS */
+    
+            :root { --bg: #6c5ce7; --text: #fff; --accent: #a29bfe; }
+            body { font-family: sans-serif; background-color: #6c5ce7; background-image: radial-gradient(#a29bfe 2px, transparent 2px); background-size: 20px 20px; }
+            h1 { font-size: 8rem; font-weight: 900; letter-spacing: -5px; margin: 0; color: #fff; text-shadow: 4px 4px 0 #000; }
+            .container { background: #fff; color: #6c5ce7; padding: 40px; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.2); max-width: 400px; }
+            h2 { font-weight: 900; }
+            .btn { background: #6c5ce7; color: #fff; border-radius: 10px; }
+        
+    
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 { font-size: 4rem !important; }
+      .container { padding: 20px !important; width: 90% !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z"/></svg></div>
+    
+    <!-- Special Split Structure for 506 -->
+    
+    
+    <h1>429</h1>
+    <h2>Too Many Requests</h2>
+    <p class="desc">请求过于频繁，请稍后</p>
+    <a href="./index.html" class="btn">RETURN HOME</a>
+    
+    
+  </div>
+
+  <div class="hidden-data">
+    <div class="code-pill">HTTP 429</div>
+    <h1>Too Many Requests</h1>
+    <p class="desc">请求过于频繁，请稍后</p>
+    <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z"/></svg></div>
+  </div>
+</body>
+</html>
